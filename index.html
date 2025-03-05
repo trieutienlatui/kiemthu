@@ -15,11 +15,19 @@
             background-color: #f4f4f4;
         }
         .info-card {
-            background: white;
-            padding: 20px 40px;
-            border-radius: 12px;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 30px;
+            border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            max-width: 400px;
+            color: white;
+        }
+        .info-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         h1 {
             color: #333;
@@ -28,12 +36,27 @@
             font-size: 18px;
             color: #555;
         }
+        .info-card h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info-card p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
-    <div class="info-card">
-        <h1>Trang Triệu Tiên</h1>
+    <div class="info-card" onclick="handleCardClick()">
+        <h1>Trang Triều Tiến</h1>
         <p>MSSV: 2180606002</p>
+        <p>Số điện thoại: 0818894699</p>
+        <p>Email: trangtrieutien2003@gmail.com</p>
     </div>
+    <script>
+        function handleCardClick() {
+            alert('Card clicked!');
+        }
+    </script>
 </body>
 </html>
