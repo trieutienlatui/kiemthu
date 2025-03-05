@@ -4,54 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông tin cá nhân</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .info-card {
-            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-            max-width: 400px;
-            color: white;
-        }
-        .info-card:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        .info-card h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .info-card p {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="info-card" onclick="handleCardClick()">
         <h1>Trang Triều Tiến</h1>
         <p>MSSV: 2180606002</p>
-        <p>Số điện thoại: 0818894699</p>
-        <p>Email: trangtrieutien2003@gmail.com</p>
+        <p>Ngành : Công nghệ Thông tin</p>
     </div>
     <script>
         function handleCardClick() {
