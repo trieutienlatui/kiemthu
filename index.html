@@ -6,17 +6,40 @@
     <title>Thông tin cá nhân</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="info-card" onclick="handleCardClick()">
-        <h1>Trang Triều Tiến</h1>
-        <p>MSSV: 2180606002</p>
-        <p>Ngành : Công nghệ Thông tin</p>
+    <div class="flip-card">
+        <div class="info-card">
+            <div class="card-front">
+                <img style="object-fit: cover; width: 100px;height: 100px;" src="./img/avatar.jpg" alt="">
+                <h1>🎓 Card Information</h1>
+                <p>Họ Tên: Trang Triều Tiến</p>
+                <p>MSSV: 2180606002</p>
+                <p>Ngành: Công nghệ Thông tin</p>
+                
+                <button class="view-courses-btn" onclick="window.location.href='study.html'">
+                    <span class="material-icons">school</span>
+                    Xem môn học
+                </button>
+                <p><small>Click để xem thông tin liên hệ</small></p>
+            </div>
+            <div class="card-back">
+                <img src="./img/avatar.jpg" alt="Profile" class="profile-img">
+                <div class="contact-info">
+                    <p><span class="material-icons">phone</span>0818894699</p>
+                    <p><span class="material-icons">email</span>trangtrieutien2003@gmail.com</p>
+                </div>
+                <p><small style="color: white;">Click để quay lại</small></p>
+            </div>
+        </div>
     </div>
+
     <script>
-        function handleCardClick() {
-            alert('Card clicked!');
-        }
+        const card = document.querySelector('.info-card');
+        document.querySelector('.flip-card').addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
     </script>
 </body>
 </html>
